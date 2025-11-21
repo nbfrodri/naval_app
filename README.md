@@ -1,73 +1,60 @@
-# React + TypeScript + Vite
+# Naval AI Processor - Indesia Hackathon Demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## ⚓ Overview
 
-Currently, two official plugins are available:
+This project is a **Proof of Concept (PoC)** developed for the **Indesia Hackathon**, focusing on **Navantia's** challenge to modernize naval engineering workflows.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The **Naval AI Processor** demonstrates the power of **Agentic AI** in processing **CONOPS (Concept of Operations)** documents. It utilizes a multi-agent system to automatically analyze technical PDFs, extract critical requirements, and identify key operational parameters, streamlining the generation of **SRS (Software Requirements Specifications)**.
 
-## React Compiler
+## 🎯 Hackathon Objective
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The core goal of this demo is to showcase how AI Agents can assist in the early stages of naval ship design by:
+1.  **Ingesting CONOPS**: Reading complex PDF documentation related to naval operations.
+2.  **Intelligent Processing**: Using AI agents to parse, understand, and categorize technical information.
+3.  **Requirements Extraction**: Automatically generating structured requirements (SRS) from unstructured operational descriptions.
+4.  **Parameter Identification**: Extracting key metrics and constraints essential for the engineering phase.
 
-## Expanding the ESLint configuration
+## ✨ Key Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+*   **Military-Grade UI**: A specialized, high-contrast interface designed for clarity and situational awareness.
+*   **PDF Ingestion Engine**: Drag-and-drop capability for Naval Engineering PDF files.
+*   **Real-time Agent Terminal**: Visual feedback of the multi-agent orchestration process (parsing, analyzing, extracting).
+*   **SRS Generation**: Automated output of structured requirements based on the input CONOPS.
+*   **Interactive Visualization**: Integrated PDF viewer to review the processed results side-by-side.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 Getting Started
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Prerequisites
+*   Node.js (v18 or higher)
+*   npm or yarn
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Installation
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+1.  Clone the repository:
+    ```bash
+    git clone [https://github.com/yourusername/naval-pdf-app.git](https://github.com/yourusername/naval-pdf-app.git)
+    cd naval-pdf-app
+    ```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+2.  Install dependencies:
+    ```bash
+    npm install
+    ```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+3.  Run the development server:
+    ```bash
+    npm run dev
+    ```
+
+4.  Open your browser at `http://localhost:5173` (or the port shown in your terminal).
+
+## 🛠️ Technologies
+
+*   **Frontend**: React 19, TypeScript, Vite
+*   **Styling**: Tailwind CSS (Custom Military/Naval Theme)
+*   **Processing**: Simulated Python Integration for AI Agent Logic
+*   **Visualization**: PDF.js integration
+
+## 📝 License
+
+This project is a hackathon submission and is intended for demonstration purposes.
