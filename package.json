@@ -1,5 +1,5 @@
 {
-  "homepage": "https://github.com/nbfrodri/naval_demo",
+  "homepage": "https://nbfrodri.github.io/naval_app",
   "predeploy": "npm run build",
   "deploy": "gh-pages -d dist",
   "name": "naval_demo",
